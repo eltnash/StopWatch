@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url(/img/braden-collum-9HI8UJMSdZA-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border: 1px solid white;
+    width: 60%;
+    height: 250px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 3px;
+}
+
+#timer {
+    border: 1px solid red;
+    width: 100%;
+    font-size: clamp(40px, 5vw, 72px);
+    text-align: center;
+    margin: 0px auto;
+    padding: 35px;
+}
+
+.buttons{
+    border: 1px solid purple;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Set the width of the parent element */
+}
+
+.button {
+    margin: 0 10px;
+    border: none;
+}
+
+button i {
+    font-size: 1rem;
+    padding: 10px;
+    color: white;
+}
+
+#startStopBtn{
+    background-color: white;
+    border: none;
+}
+
+#resetBtn{
+    background-color: white;
+    border: none;
+}
+
+
+
+#startStopBtn img, #resetBtn img {
+    width: 50%; /* Adjust the size relative to the button size */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
+#play img { background-color: green;}
+#pause img { background-color: orange;}
+#reset img {background-color: red;}
+
+
+
