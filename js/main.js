@@ -83,21 +83,36 @@ function stopTimer() {
 
 
 // Start/Stop Button functionality
-startStopBtn.addEventListener('click', function () {
-    if (!isRunning) {
+// i want to start my timer by pressing a button and i want to pause the timer at any value during its run when i press the same button. so button serves two functions play and pause. so the buttion is play when what condition is present or what condition should be set to allow the function which starts the timer to be called and what condition should be set on the same button to allow the function which pauses the timer to be called ?
+// how can i link pressing of a button with the behaviour of starting the timer and pausing it ?
+// create an event listener which listens for a click event from an html element object and procees to execute a function where the behaviour of starting and pausing the timer is coded.
+
+startStopBtn.addEventListener('click', function(){
+    if (isRunning === false){
         startTimer();
         isRunning = true;
-        // Change the button from play to pause
-        playPauseIcon.src = "img/pause_16dp_FFFFFF_FILL1_wght400_GRAD0_opsz20.png"; // Assuming you have an image for the pause symbol
-        playPauseIcon.style.backgroundColor = 'orange'; // Change button color to orange
-    } else {
+    } else if (isRunning === true){
         stopTimer();
         isRunning = false;
-        // Change the button from pause to play
-        playPauseIcon.src = "img/play_arrow_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png";
-        playPauseIcon.style.backgroundColor = 'green'; // Change button color back to green
     }
 });
+  
+
+// startStopBtn.addEventListener('click', function () {
+//     if (!isRunning) {
+//         startTimer();
+//         isRunning = true;
+//         // Change the button from play to pause
+//         playPauseIcon.src = "img/pause_16dp_FFFFFF_FILL1_wght400_GRAD0_opsz20.png"; // Assuming you have an image for the pause symbol
+//         playPauseIcon.style.backgroundColor = 'orange'; // Change button color to orange
+//     } else {
+//         stopTimer();
+//         isRunning = false;
+//         // Change the button from pause to play
+//         playPauseIcon.src = "img/play_arrow_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png";
+//         playPauseIcon.style.backgroundColor = 'green'; // Change button color back to green
+//     }
+// });
 
 // Reset Button functionality
 resetBtn.addEventListener('click', function () {
