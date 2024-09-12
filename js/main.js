@@ -30,8 +30,29 @@ function updateDisplay() {
 }
 
 
-// How do we start the timer
+/**############################################################# */
+
 // Function to start the timer
+
+
+//Steps - write pseudocode and comments breakdown the problem and visualizing how the solution would look like to each problem
+    //  - Research on the necessary tools (syntax) needed to solve each problem.
+    //  - implement and test out the tools to see if they solve the problem. 
+    //  - if problem is solved document the solution and the tools used. if problem is not solved revisit steop 1 and 2
+
+
+// How do we start the timer and how do we make sure that when the seconds counter reaches 60 it updates the minute counter by one each time and in the process resests the seconds counter back to 0?. how do we also do the same for the minute counter in relation the hours counter? (run the whole process within a setTimer function)
+
+
+// how do we update the seconds counter to  dynamically increment by one everysecond until it reaches 60? create a seconds variable to hold the number value then dynamically increment that number value by one (seconds ++)
+// how do we check that the seconds counter has reached 60 ? (if and else statements) 
+// how do we update the minute counter? create a minute counter variable which has a 0 value assigned to it. when the its TRUE that our second counter has reached a value of 60, one is added to the value inside the minute variable. (minute ++)
+// how do we check that the minute counter has reached 60 ? (if and else statements)
+// how do we update the hours counter ? create a hours variable which has a 0 value assigned to it. when its TRUE that our minute variable contains the number 60, one is added to the value inside the hours variable. (hours++)
+// how do we make sure this whole process runs dynamically within a set interval  (setInterval function)
+
+
+
 function startTimer() {
     interval = setInterval(() => {
         //execute this behavour after a certain time has passed
@@ -51,13 +72,15 @@ function startTimer() {
     }, 1000);
 }
 
-
+/**############################################################### */
 
 
 // Function to stop the timer
 function stopTimer() {
     clearInterval(interval);
 }
+
+
 
 // Start/Stop Button functionality
 startStopBtn.addEventListener('click', function () {
