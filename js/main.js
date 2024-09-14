@@ -38,7 +38,7 @@ function updateDisplay() {
 //Steps - write pseudocode and comments breakdown the problem and visualizing how the solution would look like to each problem
     //  - Research on the necessary tools (syntax) needed to solve each problem.
     //  - implement and test out the tools to see if they solve the problem. 
-    //  - if problem is solved document the solution and the tools used. if problem is not solved revisit steop 1 and 2
+    //  - if problem is solved document the solution and the tools used. if problem is not solved revisit step 1 and 2
 
 
 // How do we start the timer and how do we make sure that when the seconds counter reaches 60 it updates the minute counter by one each time and in the process resests the seconds counter back to 0?. how do we also do the same for the minute counter in relation the hours counter? (run the whole process within a setTimer function)
@@ -114,9 +114,18 @@ startStopBtn.addEventListener('click', function(){
 //     }
 // });
 
+
+
 // Reset Button functionality
-resetBtn.addEventListener('click', function () {
-    stopTimer();
+
+
+// i want to program an action whereby if a press a button the timer resets back to zero,
+// i want to link the action of pressing a button to reseting the timer
+// what id our button element ?
+// what tool tesets the timer 
+
+resetBtn.addEventListener('click', function () { // so we linked the action of pressing the button (resetBtn) to the function we created (stopTimer()) to stop the time
+    // stopTimer();
     isRunning = false;
     seconds = 0;
     minutes = 0;
